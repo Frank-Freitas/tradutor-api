@@ -1,0 +1,16 @@
+com\apitranslate\translate\domain\util\Language.class
+com\apitranslate\translate\domain\vo\Text.class
+com\apitranslate\translate\web\PostTranslateControler.class
+com\apitranslate\translate\domain\entity\Message.class
+com\apitranslate\translate\infra\dto\RequestDto.class
+com\apitranslate\translate\infra\mapper\ResponseMapper.class
+com\apitranslate\translate\infra\Service\ResponseTranslateUseCase.class
+com\apitranslate\translate\infra\mapper\RequestMapper.class
+com\apitranslate\translate\TranslateApplication.class
+com\apitranslate\translate\web\GetLanguageController.class
+com\apitranslate\translate\infra\mapper\RequestMapperImpl.class
+com\apitranslate\translate\domain\exception\LanguageNotFoundException.class
+com\apitranslate\translate\infra\Service\GetLanguageUseCase.class
+com\apitranslate\translate\infra\dto\ResponseDto.class
+com\apitranslate\translate\infra\mapper\ResponseMapperImpl.class
+com\apitranslate\translate\domain\exception\TextNotFoundException.class
