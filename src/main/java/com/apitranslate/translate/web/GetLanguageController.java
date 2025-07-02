@@ -19,9 +19,9 @@ public class GetLanguageController {
     @Autowired
     private GetLanguageUseCase language;
 
-    @GetMapping
-    public Set<String> get() {
-        Set<String> res = language.get();
-        return res;
+    @GetMapping("/pais")
+    public Set<String> getPaises() {
+        return language.get();
     }
+
 }
