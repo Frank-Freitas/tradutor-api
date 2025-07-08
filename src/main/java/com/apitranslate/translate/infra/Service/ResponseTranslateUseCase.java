@@ -1,4 +1,4 @@
-package com.apitranslate.translate.infra.Service;
+package com.apitranslate.translate.infra.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -18,6 +18,8 @@ import com.google.genai.Client;
 
 import com.google.genai.types.GenerateContentResponse;
 
+import io.github.cdimascio.dotenv.Dotenv;
+
 @Service
 public class ResponseTranslateUseCase {
 
@@ -28,10 +30,11 @@ public class ResponseTranslateUseCase {
     private ResponseMapper responseMapper;
 
     public ResponseDto translate(RequestDto request) {
+        Dotenv env = Dotenv.load();
+
+        String apiKey = env.get("key");
 
         Message message = requestMapper.toEntity(request);
-
-        String apiKey = System.getenv("API_KEY");
 
         Client client = Client.builder().apiKey(apiKey).build();
 

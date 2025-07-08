@@ -17,6 +17,9 @@ public class Message {
         if (language == null || language.isBlank()) {
             throw new LanguageNotFoundException("Idioma invalido");
         }
+        if (!Language.getLanguages().contains(language)) {
+            throw new LanguageNotFoundException("Idioma invalido");
+        }
         this.text = new Text(text);
         this.language = language;
     }
@@ -33,7 +36,7 @@ public class Message {
         if (language == null || language.isBlank()) {
             throw new LanguageNotFoundException("Idioma invalido");
         }
-        if (!Language.getLanguages().contains(language)) {
+        if (!Language.getLanguages().contains(language)) {  
             throw new LanguageNotFoundException("Idioma invalido");
         }
         this.language = language;
