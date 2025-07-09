@@ -1,13 +1,17 @@
 # API de Tradução
-Esta é uma API de tradução de textos, desenvolvida em **Java** com **Spring Boot**.
-Está sendo criada em partes, com o objetivo de praticar padrões de desenvolvimento em projetos Java com Spring.
-Com o tempo, o projeto será atualizado e ganhará novas camadas de estudo, incluindo padrões de projeto, arquiteturas, metodologias e paradigmas de programação, para aprofundar ainda mais o aprendizado.
 
-**Sobre o projeto na versão atual**
+Esta é uma API de tradução de textos, desenvolvida em **Java** com **Spring Boot**.  
+Está sendo criada em partes, com o objetivo de praticar padrões de desenvolvimento em projetos Java com Spring.  
+Com o tempo, o projeto será atualizado e ganhará novas camadas de estudo, incluindo padrões de projeto, arquiteturas, metodologias e paradigmas de programação, aprofundando ainda mais o aprendizado.
 
-Na versão atual, foi utilizada a ferramenta **GenAI** para realizar traduções de forma automatizada.
-Também foi aplicado um conceitos de **DDD** (Domain-Driven Design) nas entidades do domínio, nas classes de Use Cases e no uso de VOs (Value Objects).
-Com a adição de novas tecnologias, este projeto será expandido com mais recursos e anotações dos aprendizados aplicados.
+## Adições recentes
+
+- Utilização da ferramenta **GenAI** para traduções automatizadas.
+- Aplicação de conceitos de **DDD** (Domain-Driven Design) nas entidades do domínio, nos casos de uso e no uso de Value Objects (VOs).
+- Implementação de uma **classe global para tratamento personalizado de exceções** (ExceptionHandler), centralizando e padronizando o controle de erros.
+- Introdução do **padrão de projeto Strategy**, com a criação da interface `Client` e classes concretas para facilitar a integração com APIs externas e tornar o sistema mais flexível.
+
+Esta lista está em constante evolução, com novas funcionalidades e aprendizados sendo incorporados conforme avanços nos estudos e implementações.
 
 ## Tecnologias utilizadas
 - Java 17
