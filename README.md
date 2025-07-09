@@ -18,7 +18,7 @@ Esta lista está em constante evolução, com novas funcionalidades e aprendizad
 - Spring Boot 3.5.3
 - Maven  3.9.9
 - API GenAI (API do Gemini)
-- Swagger (Já está configurado)
+- Swagger
 
 ## Configuração
 Após clonar o projeto do GitHub, abra o terminal na raiz do projeto e execute:
@@ -52,7 +52,7 @@ Para testar o projeto, é necessário adquirir uma chave da API do Gemini.
    ```
 
 ## Swagger
-Para testar a API, após seguir todos os passos de configuração anteriores, abra o link abaixo no navegador e utilize a interface do Swagger UI para realizar requisições de teste:
+Para testar a API, após seguir todos os passos de configuração anteriores, abra o link abaixo no navegador e utilize a interface do Swagger UI para realizar requisições:
 
 [http://localhost:8080/swagger-ui/index.html#/translate-controller/translate](http://localhost:8080/swagger-ui/index.html#/translate-controller/translate)
 

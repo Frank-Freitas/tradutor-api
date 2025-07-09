@@ -32,7 +32,5 @@ public class PostTranslateControler {
     public ResponseEntity<ResponseDto> post(@RequestBody RequestDto request) {
         ResponseDto res = translateCase.translate(request);
         return ResponseEntity.ok().body(res);
-
     }
-
 }

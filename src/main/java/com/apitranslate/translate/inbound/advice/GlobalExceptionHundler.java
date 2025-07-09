@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 
 import com.apitranslate.translate.domain.exception.LanguageNotFoundException;
 
+import com.apitranslate.translate.domain.exception.TextNotFoundException;
+
 import com.apitranslate.translate.infra.dto.ErrorResponseDto;
 
 import jakarta.servlet.http.HttpServletRequest;
@@ -29,4 +31,13 @@ public class GlobalExceptionHundler {
         return ResponseEntity.status(HttpStatus.SC_BAD_REQUEST).body(error);
     }
 
+    @ExceptionHandler(TextNotFoundException.class)
+    public ResponseEntity<ErrorResponseDto> handleTextNotFound(TextNotFoundException ex,
+            HttpServletRequest request) {
+                
+        ErrorResponseDto error = new ErrorResponseDto(HttpStatus.SC_BAD_REQUEST,
+                "Bad request",
+                ex.getMessage(), request.getRequestURI());
+        return ResponseEntity.status(HttpStatus.SC_BAD_REQUEST).body(error);
+    }
 }

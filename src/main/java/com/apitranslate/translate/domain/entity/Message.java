@@ -1,7 +1,9 @@
 package com.apitranslate.translate.domain.entity;
 
 import com.apitranslate.translate.domain.exception.LanguageNotFoundException;
+
 import com.apitranslate.translate.domain.util.Language;
+
 import com.apitranslate.translate.domain.vo.Text;
 
 public class Message {
@@ -36,7 +38,7 @@ public class Message {
         if (language == null || language.isBlank()) {
             throw new LanguageNotFoundException("Idioma invalido");
         }
-        if (!Language.getLanguages().contains(language)) {  
+        if (!Language.getLanguages().contains(language)) {
             throw new LanguageNotFoundException("Idioma invalido");
         }
         this.language = language;
@@ -47,8 +49,10 @@ public class Message {
     }
 
     public String buildMessage() {
-        return "De forma inteligente, ajustando erros de ortografia, traduza este texto (" + text.getText()
-                + "), sem mudar o significado, apenas refatorando para o idioma " + language
+        return "De forma inteligente, ajustando erros de ortografia, traduza este texto ("
+                + text.getText()
+                + "), sem mudar o significado, apenas refatorando para o idioma "
+                + language
                 + ", e não responda nada além da tradução que foi pedida.";
     }
 }

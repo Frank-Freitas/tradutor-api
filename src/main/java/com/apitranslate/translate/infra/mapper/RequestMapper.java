@@ -1,6 +1,7 @@
 package com.apitranslate.translate.infra.mapper;
 
 import org.mapstruct.Mapper;
+
 import org.mapstruct.Mapping;
 
 import com.apitranslate.translate.infra.dto.RequestDto;
