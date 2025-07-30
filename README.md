@@ -1,4 +1,4 @@
-# API de Tradução
+# Tradutor de Textos com Spring Boot
 
 Esta é uma API de tradução de textos, desenvolvida em **Java** com **Spring Boot**.  
 Está sendo criada em partes, com o objetivo de praticar padrões de desenvolvimento em projetos Java com Spring.  
@@ -20,19 +20,6 @@ Esta lista está em constante evolução, com novas funcionalidades e aprendizad
 - API GenAI (API do Gemini)
 - Swagger
 
-## Configuração
-Após clonar o projeto do GitHub, abra o terminal na raiz do projeto e execute:
-
-```bash
-mvn clean install
-```
-
-Quando a instalação terminar, para iniciar o sistema, execute:
-
-```bash
-mvn spring-boot:run
-```
-
 ## Observações
 Para testar o projeto, é necessário adquirir uma chave da API do Gemini.
 
@@ -42,6 +29,29 @@ Para testar o projeto, é necessário adquirir uma chave da API do Gemini.
 2. Faça login com sua conta Google.
 3. No topo da página, clique em **"Get API Key"** para gerar sua chave gratuita.
 
+## Configuração
+
+**Clonar repositório:**
+
+- Abra um terminal no local que deseja clonar o projeto:
+   
+   ***Git Bash, Cmd, PowerShell etc. (preferencialmente Git Bash)***
+
+- No terminal, clone o projeto com o comando:
+```bash
+git clone git@github.com:Frank-Freitas/tradutor-api.git
+```
+
+- Após clonar, va para a pasta raiz do projeto com o comando:
+```bash
+cd tradutor-api/
+```
+
+- Na raiz do projeto, execute:
+```bash
+mvn clean install
+```
+
 **Configurar API Key no projeto**
 
 1. Criar um arquivo `.env` na raiz do projeto.
@@ -50,6 +60,11 @@ Para testar o projeto, é necessário adquirir uma chave da API do Gemini.
    ```env
    Key=<sua-chave-da-api>
    ```
+
+Para executar o sistema, na pasta raiz execute abra o terminal novamente e execute:
+```bash
+mvn spring-boot:run
+```
 
 ## Swagger
 Para testar a API, após seguir todos os passos de configuração anteriores, abra o link abaixo no navegador e utilize a interface do Swagger UI para realizar requisições:
