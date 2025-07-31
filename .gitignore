@@ -9,7 +9,7 @@ build/
 # Arquivos de ambiente
 .env
 
-# Wrapper do Maven (mantenha os scripts, ignore cache se quiser)
+# Wrapper do Maven
 .mvn/wrapper/maven-wrapper.jar
 
 # Spring Tool Suite / Eclipse / STS

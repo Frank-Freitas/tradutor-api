@@ -16,12 +16,7 @@ public class Message {
     }
 
     public Message(String text, String language) {
-        if (language == null || language.isBlank()) {
-            throw new LanguageNotFoundException("Idioma invalido");
-        }
-        if (!Language.getLanguages().contains(language)) {
-            throw new LanguageNotFoundException("Idioma invalido");
-        }
+        languageVerification(language);
         this.text = new Text(text);
         this.language = language;
     }
@@ -35,17 +30,21 @@ public class Message {
     }
 
     public void setLanguage(String language) {
+        languageVerification(language);
+        this.language = language;
+    }
+
+    public String getLanguage() {
+        return language;
+    }
+
+    void languageVerification(String language) {
         if (language == null || language.isBlank()) {
             throw new LanguageNotFoundException("Idioma invalido");
         }
         if (!Language.getLanguages().contains(language)) {
             throw new LanguageNotFoundException("Idioma invalido");
         }
-        this.language = language;
-    }
-
-    public String getLanguage() {
-        return language;
     }
 
     public String buildMessage() {
