@@ -61,7 +61,7 @@ mvn clean install
    Key=<sua-chave-da-api>
    ```
 
-Para executar o sistema, na pasta raiz execute abra o terminal novamente e execute:
+Para executar o sistema, na pasta raiz abra o terminal novamente e execute:
 ```bash
 mvn spring-boot:run
 ```
